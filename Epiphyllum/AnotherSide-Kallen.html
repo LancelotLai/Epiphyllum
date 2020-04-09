@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AnotherSide-Kallen</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="Epiphyllum.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/hittest.js"></script>
+  <script src="preloadImages.js"></script>
+  <script src="preloadAudio.js"></script>
+  <script src="js/AnotherSide-Kallen.js"></script>
+</head>
+
+<body>
+
+  <div id="stage">
+
+    <div id="char1" class="char"></div>
+
+    <div id="char2" class="char"></div>
+
+    <div id="char3" class="char"></div>
+
+    <div id="textbox">
+      <ul id="controlguide">
+        <div>
+          <li>TextControl | Left click on the textbox / Press Enter | | </li>
+          <li>Call out backlog | MouseWheel on the textbox / Press Space | | </li>
+          <li>Close backlog | Click ｢Close X｣ / Press Esc in the backlog page</li>
+        </div>
+        <li>▷ Control Guide</li>
+      </ul>
+      <div id="spokesperson"></div>
+      <div id="message"></div>
+    </div>
+
+    <div id="flash">
+      <img src="images/nowloading.gif" alt="nowloading" class="flashBlack">
+
+      <div id="referenceList" class="moveBack">
+        <h1>References</h1>
+
+        <p>The artworks on below are from <br>
+          あかべぇそふとつぅ<br>
+          ----<br>
+          cheresa-bedroom-day.jpg <br>
+          cheresa-bedroom-deep-night.jpg <br>
+          cheresa-bedroom-night.jpg <br>
+          cheresa-home-day.jpg <br>
+          cheresa-home-dusk.jpg <br>
+          cheresa-home-night.jpg <br>
+          apartment-entrance-day.jpg <br>
+          apartment-entrance-night.jpg <br>
+          ----</p>
+
+        <p>The artworks on below are from <br>
+          アトリエかぐや BARE&BUNNY <br>
+          ----<br>
+          station-day.jpg <br>
+          station-dusk.jpg <br>
+          station-inside.jpg <br>
+          apartment-day.jpg <br>
+          apartment-deep-night.jpg <br>
+          apartment-dusk.jpg <br>
+          apartment-night.jpg <br>
+          cafe-day.jpg <br>
+          cafe-dusk.jpg <br>
+          index1.jpg <br>
+          index2.jpg <br>
+          index3.jpg <br>
+          school-day.jpg <br>
+          school-dusk.jpg <br>
+          school-night.jpg <br>
+          classroom-day.jpg <br>
+          classroom-dusk.jpg <br>
+          classroom-night.jpg <br>
+          shopping-street-day.jpg <br>
+          shopping-street-dusk.jpg <br>
+          shopping-street-night.jpg <br>
+          room-day.jpg <br>
+          room-deep-night.jpg <br>
+          room-dusk.jpg <br>
+          room-night.jpg <br>
+          home-day.jpg <br>
+          home-deep-night.jpg <br>
+          home-dusk.jpg <br>
+          home-entrance-day.jpg <br>
+          home-entrance-dusk.jpg <br>
+          home-entrance-night.jpg <br>
+          home-night.jpg <br>
+          shop-dusk.jpg <br>
+          bypath-day.jpg <br>
+          bypath-night.jpg <br>
+          bypath-dusk.jpg <br>
+          ayaroom-day.jpg <br>
+          ayaroom-deep-night.jpg <br>
+          ayaroom-dusk.jpg <br>
+          ayaroom-night.jpg <br>
+          kallenroom-deep-day.jpg <br>
+          kallenroom-deep-night.jpg <br>
+          kallenroom-dusk.jpg <br>
+          kallenroom-night.jpg <br>
+          street-day.jpg <br>
+          street-deep-night.jpg <br>
+          street-dusk.jpg <br>
+          ----</p>
+
+        <p>The artworks on below are from <br>
+          CLIP☆CRAFT <br>
+          ----<br>
+          JongunHappy.png <br>
+          JongunHappy2.png <br>
+          JongunHappy3.png <br>
+          Jongun-Normal.png <br>
+          Jongun-o.png <br>
+          Jongun-sensed2.png <br>
+          Jongun-sensed3.png <br>
+          Jongun-shocked.png <br>
+          Jongun-shocked3.png <br>
+          Jongun-Relax.png <br>
+          Jongun-Relax2.png <br>
+          Jongun-smile.png <br>
+          Jongun-UnderwearHappy.png <br>
+          Jongun-Underwear-normal.png <br>
+          Jongun-Underwear-o.png <br>
+          Jongun-Underwear-Unhappy1.png <br>
+          Jongun-Underwear-Unhappy2.png <br>
+          Jongun-Underwear-Relax.png <br>
+          Jongun-Underwear-Relax2.png <br>
+          Jongun-Underwear-shocked.png <br>
+          Jongun-Underwear-Smile.png <br>
+          JongunUnhappy.png <br>
+          JongunUnhappy2.png <br>
+          CheresaHappy.png <br>
+          Cheresa-Laugh.png <br>
+          CheresaUnhappy.png <br>
+          CheresaUnhappy2.png <br>
+          Cheresa-Sigh.png <br>
+          Cheresa-o.png <br>
+          Cheresa-shadow.png <br>
+          Cheresa-Shout.png <br>
+          Cheresa-Smile.png <br>
+          Cheresa-Embarrass.png <br>
+          Cheresa-Embarrass2.png <br>
+          Cheresa-Embarrass3.png <br>
+          Cheresa-worry.png <br>
+          Kallen-Angry1.png <br>
+          Kallen-Angry2.png <br>
+          KallenHappy.png <br>
+          Kallen-noticed1.png <br>
+          Kallen-noticed2.png <br>
+          Kallen-noticed3.png <br>
+          Kallen-confidence2.png <br>
+          Kallen-confidence3.png <br>
+          Kallen-sad1.png <br>
+          Kallen-sad2.png <br>
+          Kallen-Smile2.png <br>
+          Kallen-Smile3.png <br>
+          Kallen-Sigh.png <br>
+          Kallen-Sigh2.png <br>
+          Kallen-Sigh3.png <br>
+          Kallen-Tower-sad1.png <br>
+          Kallen-Tower-sad2.png <br>
+          Kallen-Tower-smile.png <br>
+          cheresacounter1.png <br>
+          cheresacounter2.png <br>
+          cheresacounter3.png <br>
+          ayacounter.png <br>
+          kallencounter.png <br>
+          AyaHappy.png <br>
+          AyaHappy2.png <br>
+          AyaHappy3.png <br>
+          AyaHappy4.png <br>
+          AyaHappy5.png <br>
+          Aya-New-Embarass.png <br>
+          Aya-New-Happy.png <br>
+          Aya-New-Happy2.png <br>
+          Aya-New-Shocked.png <br>
+          Aya-New-Unhappy.png <br>
+          Aya-New-Tower.png <br>
+          Aya-New-TowerHappy.png <br>
+          Aya-Smile.png <br>
+          Aya-Smile2.png <br>
+          Aya-Smile3.png <br>
+          Aya-TowerHappy.png <br>
+          ----</p>
+
+        <p>The artworks on below are from <br>
+          7GirlsWar <br>
+          ----<br>
+          ShirleyEmbarrass.png <br>
+          ShirleyHappy.png <br>
+          ShirleyLaugh.png <br>
+          ShirleyNormal.png <br>
+          shirleycounter1.png <br>
+          shirleycounter2.png <br>
+          shirleycounter3.png <br>
+          defeat.ogg <br>
+          school1.ogg <br>
+          healing3.ogg <br>
+          daily1.ogg <br>
+          daily2.ogg <br>
+          school-bell.mp3 <br>
+          birds.ogg <br>
+          footstep01.ogg <br>
+          footstep02.ogg <br>
+          night-wild.ogg <br>
+          gaya1.mp3 <br>
+          yeah.mp3 <br>
+          blood.ogg <br>
+          falldown.mp3 <br>
+          kiss.ogg <br>
+          se_maoudamashii_se_finger01.ogg <br>
+          slap.ogg <br>
+          knock.ogg <br>
+          knife.ogg <br>
+          ----</p>
+
+        <p>The artworks on below are from <br>
+          Code Geass OST <br>
+          ----<br>
+          01 僕は、鳥になる。.mp3 <br>
+          01 Previous Notice.mp3 <br>
+          02 Hitomi - Sensibility.mp3 <br>
+          02 Stories.mp3 <br>
+          05 Feel Ambivalents.mp3 <br>
+          07 Strange Girl.mp3 <br>
+          07 Alone.mp3 <br>
+          11 All Hail Britannia!!!.mp3 <br>
+          12 Lack of Power for Wisdom.mp3 <br>
+          13 Masquerade.mp3 <br>
+          13 Pessimistic Time.mp3 <br>
+          14 黒石ひとみ - If I Were A Bird.mp3 <br>
+          16 Stray Cat.mp3 <br>
+          17 Occupied Thinking.mp3 <br>
+          22 Innocent Days.mp3 <br>
+          ---- </p>
+
+        <p>The artworks on below are from <br>
+          Saiki Kusuo no Sainan OST <br>
+          ----<br>
+          sad.mp3 <br>
+          girlstalk.mp3 <br>
+          girlstalk2.mp3 <br>
+          fight1.mp3 <br>
+          fight2.mp3 <br>
+          bad perception.mp3 <br>
+          ----</p>
+
+        <p>The artworks on below are from <br>
+          School Days VOCAL COMPLETE ALBUM <br>
+          ----<br>
+          Still I Love You～みつめるよりは幸せ～.flac <br>
+          あなたが…いない -remix ver.-.flac <br>
+          悲しみの向こうへ.flac <br>
+          ----</p>
+
+        <p>The artworks on below are from <br>
+          atelier-kaguya <br>
+          ----<br>
+          FakperAngry1.png <br>
+          FakperAngry2.png <br>
+          ---- </p>
+
+        <p>The artworks on below are from <br>
+          orangefreesounds.com <br>
+          ----<br>
+          Apartment-ding-dong-sound.mp3 <br>
+          Wooden-door-opening-sound-effect.mp3 <br>
+          ----</p>
+
+        <p>The artworks on below are from <br>
+          Mobile Suit Gundam SEED <br>
+          ----<br>
+          magicAbility.mov <br>
+          magicAbility.mp4 <br>
+          ----</p>
+
+        <p>The artwork on below is from <br>
+          Fruits Basket ~Shiki (Four Seasons) <br>
+          ----<br>
+          01. For Fruits Basket.mp3 <br>
+          ----</p>
+
+        <p>The artwork on below is from <br>
+          Pop Team Epic photo series <br>
+          ----<br>
+          nowloading.gif <br>
+          ---- </p>
+
+        <p>The artwork on below is from <br>
+          Memories Off 6 Complete Audio Collection <br>
+          ----<br>
+          24. Irreplaceable memories -Piano-.mp3 <br>
+          ---- </p>
+
+        <p>The artwork on below is from <br>
+          Macquarie University Sound Library <br>
+          ----<br>
+          OutwardInversioncontactmic <br>
+          BBcellphonebrokenvibration <br>
+          notificationlongalt3.wav <br>
+          ----</p>
+
+        <p>
+          <div class="songBottom">----</div>
+        </p>
+
+
+      </div>
+      <div id="lyrics" class="moveBack"></div>
+    </div>
+
+    <div id="backlog" class="moveBack">
+      <header class="nonespeech">
+        <h1>
+          Backlog
+        </h1>
+        <p class="backlogborder">Player's Name: <span class="charFirstname"></span> Barton</p>
+      </header>
+
+      <section>
+        <div id="backlogClose">Close X</div>
+      </section>
+
+      <aside>
+        <ul>
+          <li id="CheresaCounter"></li>
+          <li id="ShirleyCounter"></li>
+          <li id="AyaCounter"></li>
+          <li id="KallenCounter"></li>
+        </ul>
+      </aside>
+
+    </div>
+  </div>
+
+  <div id="audio1"></div>
+  <div id="audio2"></div>
+
+</body>
+
+</html>
